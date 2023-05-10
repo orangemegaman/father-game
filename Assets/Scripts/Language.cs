@@ -19,7 +19,7 @@ public class Language : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-          //CurrentLanguage = GetLang();// активировать при билде!!!
+          CurrentLanguage = GetLang();// активировать при билде!!!
         }
         else
         {

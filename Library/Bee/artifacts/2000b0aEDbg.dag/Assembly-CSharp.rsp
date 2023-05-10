@@ -373,7 +373,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Progress.cs"
 "Assets/Scripts/RoadGenerator.cs"
-"Assets/Scripts/SoundLoader.cs"
+"Assets/Scripts/SoundsLoader.cs"
 "Assets/Scripts/SoundsManager.cs"
 "Assets/Scripts/StartMenu.cs"
 "Assets/Scripts/TriggerStones.cs"

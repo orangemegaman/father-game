@@ -2534,8 +2534,8 @@ struct Slider_t5891706383A14955E3FAD68A79829F3234681652;
 struct SortColumnDescriptions_tDC3FDF948D96F26E0BCB2C971C6EDA1E02BAB1EA;
 // System.Globalization.SortVersion
 struct SortVersion_tBB62978F95905541FC817E11F73A0B1DB392F07E;
-// SoundLoader
-struct SoundLoader_tA321728A6442489BCFEDDD6D1ADE35C575207BD7;
+// SoundsLoader
+struct SoundsLoader_t64668E2CD1B287AEF95EC9737766B4797F5C8359;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // UnityEngine.TextCore.Text.SpriteAsset
@@ -15253,14 +15253,14 @@ struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1_StaticFields
 	RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1* ___instance_0;
 };
 
-// PlayerBehaviour/<StopFallingCoroutine>d__7
-struct U3CStopFallingCoroutineU3Ed__7_tA2EC391BC5EE2E9B03B8C184B11CAC22309EEEAE  : public RuntimeObject
+// PlayerBehaviour/<StopFallingCoroutine>d__6
+struct U3CStopFallingCoroutineU3Ed__6_t4C77ED01834618BF860C8DF2020F8A5AC7365FAD  : public RuntimeObject
 {
-	// System.Int32 PlayerBehaviour/<StopFallingCoroutine>d__7::<>1__state
+	// System.Int32 PlayerBehaviour/<StopFallingCoroutine>d__6::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object PlayerBehaviour/<StopFallingCoroutine>d__7::<>2__current
+	// System.Object PlayerBehaviour/<StopFallingCoroutine>d__6::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// PlayerBehaviour PlayerBehaviour/<StopFallingCoroutine>d__7::<>4__this
+	// PlayerBehaviour PlayerBehaviour/<StopFallingCoroutine>d__6::<>4__this
 	PlayerBehaviour_tD52ECFAADFA470DF374AC5192046F683B15A1F59* ___U3CU3E4__this_2;
 };
 
@@ -15698,20 +15698,20 @@ struct TypeInfo_t62AF95443A1196CCF884DAFFC4E6785CC02AFC77  : public RuntimeObjec
 	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ___Elements_1;
 };
 
-// SoundLoader/<LoadClip>d__10
-struct U3CLoadClipU3Ed__10_t01C1EF338C32E63672429EFEC816864F6F261B1F  : public RuntimeObject
+// SoundsLoader/<LoadClip>d__12
+struct U3CLoadClipU3Ed__12_t0E8578FE04DBEE8908D0394CD59A974981BFC2FD  : public RuntimeObject
 {
-	// System.Int32 SoundLoader/<LoadClip>d__10::<>1__state
+	// System.Int32 SoundsLoader/<LoadClip>d__12::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object SoundLoader/<LoadClip>d__10::<>2__current
+	// System.Object SoundsLoader/<LoadClip>d__12::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String SoundLoader/<LoadClip>d__10::url
+	// System.String SoundsLoader/<LoadClip>d__12::url
 	String_t* ___url_2;
-	// SoundLoader SoundLoader/<LoadClip>d__10::<>4__this
-	SoundLoader_tA321728A6442489BCFEDDD6D1ADE35C575207BD7* ___U3CU3E4__this_3;
-	// System.Int32 SoundLoader/<LoadClip>d__10::id
+	// SoundsLoader SoundsLoader/<LoadClip>d__12::<>4__this
+	SoundsLoader_t64668E2CD1B287AEF95EC9737766B4797F5C8359* ___U3CU3E4__this_3;
+	// System.Int32 SoundsLoader/<LoadClip>d__12::id
 	int32_t ___id_4;
-	// UnityEngine.Networking.UnityWebRequest SoundLoader/<LoadClip>d__10::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest SoundsLoader/<LoadClip>d__12::<www>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwwwU3E5__2_5;
 };
 
@@ -52389,8 +52389,6 @@ struct Coin_t6EC3724A41D53D737B499E377089217F0190C268  : public MonoBehaviour_t5
 {
 	// UnityEngine.GameObject Coin::_effectPrefab
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____effectPrefab_4;
-	// UnityEngine.GameObject Coin::coinEffect
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___coinEffect_5;
 };
 
 // CoinManager
@@ -52502,42 +52500,38 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____gameOver_14;
 	// UnityEngine.GameObject GameManager::_areWePlaying
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____areWePlaying_15;
-	// UnityEngine.AudioSource GameManager::_soundBang
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____soundBang_16;
-	// UnityEngine.AudioSource GameManager::_soundTheme
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____soundTheme_17;
-	// UnityEngine.AudioSource GameManager::_soundAdvance
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____soundAdvance_18;
 	// UnityEngine.GameObject[] GameManager::_lifes
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____lifes_19;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____lifes_16;
 	// UnityEngine.Animator GameManager::_animator
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ____animator_20;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ____animator_17;
 	// TMPro.TextMeshProUGUI GameManager::_levelNumber
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ____levelNumber_21;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ____levelNumber_18;
 	// TMPro.TextMeshProUGUI GameManager::_levelString
-	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ____levelString_22;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ____levelString_19;
 	// System.Boolean GameManager::flagContinue
-	bool ___flagContinue_23;
+	bool ___flagContinue_20;
 	// System.Boolean GameManager::flagStand
-	bool ___flagStand_24;
+	bool ___flagStand_21;
 	// System.Boolean GameManager::flagConRepeatColision
-	bool ___flagConRepeatColision_25;
+	bool ___flagConRepeatColision_22;
 	// System.Boolean GameManager::flagPause
-	bool ___flagPause_26;
+	bool ___flagPause_23;
 	// System.Boolean GameManager::flagSpace
-	bool ___flagSpace_27;
+	bool ___flagSpace_24;
+	// System.Boolean GameManager::isMusic
+	bool ___isMusic_25;
 	// System.Int32 GameManager::StartMinNumberCoins
-	int32_t ___StartMinNumberCoins_28;
+	int32_t ___StartMinNumberCoins_26;
 	// System.Int32 GameManager::CurrentMinNumberCoins
-	int32_t ___CurrentMinNumberCoins_29;
+	int32_t ___CurrentMinNumberCoins_27;
 	// System.Int32 GameManager::NumberLevel
-	int32_t ___NumberLevel_30;
+	int32_t ___NumberLevel_28;
 	// System.Int32 GameManager::StartNumberCoinsForGrowLevel
-	int32_t ___StartNumberCoinsForGrowLevel_31;
+	int32_t ___StartNumberCoinsForGrowLevel_29;
 	// System.Int32 GameManager::CurrentNumberCoinsForGrowLevel
-	int32_t ___CurrentNumberCoinsForGrowLevel_32;
+	int32_t ___CurrentNumberCoinsForGrowLevel_30;
 	// System.Int32 GameManager::CounterForLifes
-	int32_t ___CounterForLifes_33;
+	int32_t ___CounterForLifes_31;
 };
 
 // Go
@@ -52722,10 +52716,8 @@ struct PlayerBehaviour_tD52ECFAADFA470DF374AC5192046F683B15A1F59  : public MonoB
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___GameManager_6;
 	// UnityEngine.Animator PlayerBehaviour::_animator
 	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ____animator_7;
-	// UnityEngine.AudioSource PlayerBehaviour::_soundColision
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____soundColision_8;
 	// UnityEngine.GameObject PlayerBehaviour::_effectPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____effectPrefab_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____effectPrefab_8;
 };
 
 // PlayerController
@@ -52941,26 +52933,28 @@ struct SkewTextExample_t23E1D8362105119C600703D984514C02617441D1  : public MonoB
 	float ___ShearAmount_7;
 };
 
-// SoundLoader
-struct SoundLoader_tA321728A6442489BCFEDDD6D1ADE35C575207BD7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+// SoundsLoader
+struct SoundsLoader_t64668E2CD1B287AEF95EC9737766B4797F5C8359  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.AudioSource SoundLoader::_as
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____as_4;
-	// System.Collections.Generic.List`1<UnityEngine.AudioClip> SoundLoader::_audioClips
-	List_1_t33C1B21871505CF0516B63C148CD83EDA452BB5F* ____audioClips_5;
-	// System.Boolean SoundLoader::_isAssetsLoaded
-	bool ____isAssetsLoaded_6;
-	// System.Boolean SoundLoader::_inProcess
-	bool ____inProcess_7;
-	// System.Collections.Generic.List`1<System.String> SoundLoader::_clipUrl
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ____clipUrl_8;
+	// UnityEngine.AudioSource SoundsLoader::_asSounds
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____asSounds_4;
+	// UnityEngine.AudioSource SoundsLoader::_asMusic
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ____asMusic_5;
+	// System.Collections.Generic.List`1<UnityEngine.AudioClip> SoundsLoader::_audioClips
+	List_1_t33C1B21871505CF0516B63C148CD83EDA452BB5F* ____audioClips_6;
+	// System.Boolean SoundsLoader::_isAssetsLoaded
+	bool ____isAssetsLoaded_7;
+	// System.Boolean SoundsLoader::_inProcess
+	bool ____inProcess_8;
+	// System.Collections.Generic.List`1<System.String> SoundsLoader::_clipUrl
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ____clipUrl_9;
 };
 
 // SoundsManager
 struct SoundsManager_tB0D5C0805D933C6E7DB5102DA40EE0A080FEF001  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// SoundLoader SoundsManager::soundLoader
-	SoundLoader_tA321728A6442489BCFEDDD6D1ADE35C575207BD7* ___soundLoader_5;
+	// SoundsLoader SoundsManager::soundsLoader
+	SoundsLoader_t64668E2CD1B287AEF95EC9737766B4797F5C8359* ___soundsLoader_5;
 };
 
 struct SoundsManager_tB0D5C0805D933C6E7DB5102DA40EE0A080FEF001_StaticFields
@@ -62967,7 +62961,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3505 = { sizeof(Language_t57
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3506;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3506 = { sizeof(ObjectsGenerator_tCBCE5341215D37466D1566CD5DEF252321409A2D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3507;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3507 = { sizeof(U3CStopFallingCoroutineU3Ed__7_tA2EC391BC5EE2E9B03B8C184B11CAC22309EEEAE), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3507 = { sizeof(U3CStopFallingCoroutineU3Ed__6_t4C77ED01834618BF860C8DF2020F8A5AC7365FAD), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3508;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3508 = { sizeof(PlayerBehaviour_tD52ECFAADFA470DF374AC5192046F683B15A1F59), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3509;
@@ -62983,9 +62977,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3513 = { sizeof(Progress_tDD
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3514;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3514 = { sizeof(RoadGenerator_tF1363236E1A3DB7A0C1F07325B75ECACD5DA585D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3515;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3515 = { sizeof(U3CLoadClipU3Ed__10_t01C1EF338C32E63672429EFEC816864F6F261B1F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3515 = { sizeof(U3CLoadClipU3Ed__12_t0E8578FE04DBEE8908D0394CD59A974981BFC2FD), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3516;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3516 = { sizeof(SoundLoader_tA321728A6442489BCFEDDD6D1ADE35C575207BD7), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3516 = { sizeof(SoundsLoader_t64668E2CD1B287AEF95EC9737766B4797F5C8359), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3517;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3517 = { sizeof(SoundsManager_tB0D5C0805D933C6E7DB5102DA40EE0A080FEF001), -1, sizeof(SoundsManager_tB0D5C0805D933C6E7DB5102DA40EE0A080FEF001_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3518;

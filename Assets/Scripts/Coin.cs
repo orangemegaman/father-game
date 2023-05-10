@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {   
-    [SerializeField] GameObject _effectPrefab;
-    GameObject coinEffect;  
+    [SerializeField] GameObject _effectPrefab;  
     void OnTriggerEnter(Collider other)
     {
-         FindObjectOfType<CoinManager>().AddOne();
+        SoundsManager.Instance.soundsLoader.PlaySounds(1);
+        FindObjectOfType<CoinManager>().AddOne();
         gameObject.SetActive(false); 
-        coinEffect = Instantiate(_effectPrefab, transform.position, Quaternion.identity);
-        Invoke("DestroyEffect", 0.5f);        
+        Instantiate(_effectPrefab, transform.position, Quaternion.identity);
+               
     }  
-   void DestroyEffect()
-   {
-    Destroy(coinEffect);
-   }
 }

@@ -8,26 +8,23 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] public PlayerController PlayerController;
     [SerializeField] public GameManager GameManager;
     [SerializeField] Animator _animator;
-    [SerializeField] AudioSource _soundColision;
     [SerializeField] GameObject _effectPrefab;
 
 
     public void StartFatalCollision()
     {
-        //GameManager._soundTheme.Stop();
+        SoundsManager.Instance.soundsLoader.StopMusic();
+        GameManager.isMusic = false;
         _animator.SetTrigger("Drunk Idle");
-        _soundColision.Play();
+        SoundsManager.Instance.soundsLoader.PlaySounds(2);// YouLose
         RoadGenerator.currentSpeed = 0;
         Instantiate(_effectPrefab, transform.position, transform.rotation);
         StartCoroutine(StopFallingCoroutine());
-
     }
 
     IEnumerator StopFallingCoroutine()
     {
         yield return new WaitForSeconds(1.5f);
         GameManager.DecrementLifesPlayer();
-
-
     }
 }

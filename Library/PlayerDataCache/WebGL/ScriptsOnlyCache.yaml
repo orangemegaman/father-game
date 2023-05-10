@@ -13,7 +13,7 @@ ScriptsOnlyBuild:
     - PlayerController
     - Progress
     - RoadGenerator
-    - SoundLoader
+    - SoundsLoader
     - SoundsManager
     - StartMenu
     - TriggerStones
@@ -156,8 +156,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -173,43 +171,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3164}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3322}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4762}
     - Class: 114
-      Script: {instanceID: 5094}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 6180}
+      Script: {instanceID: 6186}
     - Class: 114
-      Script: {instanceID: 6272}
+      Script: {instanceID: 6278}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6534}
     - Class: 114
-      Script: {instanceID: 6816}
+      Script: {instanceID: 6822}
     - Class: 114
-      Script: {instanceID: 6886}
+      Script: {instanceID: 6892}
     - Class: 114
-      Script: {instanceID: 7310}
+      Script: {instanceID: 7316}
     - Class: 114
-      Script: {instanceID: 7774}
+      Script: {instanceID: 7780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -260,23 +258,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4762}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 6070}
+      Script: {instanceID: 6076}
     - Class: 114
-      Script: {instanceID: 6180}
+      Script: {instanceID: 6186}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6534}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -319,41 +317,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2000}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 4214}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 4326}
+      Script: {instanceID: 4218}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4330}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4608}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 4652}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 4762}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5262}
     - Class: 114
-      Script: {instanceID: 6180}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 6528}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 7310}
+      Script: {instanceID: 6186}
     - Class: 114
-      Script: {instanceID: 24686}
+      Script: {instanceID: 6534}
     - Class: 114
-      Script: {instanceID: 26174}
+      Script: {instanceID: 7316}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -413,6 +411,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 145ead4a7e995480dc259853c68825a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundsLoader
   - hash:
       serializedVersion: 2
       Hash: 454fd3834dc328ef5399a9a42e53d592
@@ -577,7 +581,7 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9e37d96ae5a0af104f7a49968930e357
+      Hash: ed1d586052b6ab788442d413011528f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerBehaviour
@@ -667,7 +671,7 @@ ScriptsOnlyBuild:
     className: csParticleMove
   - hash:
       serializedVersion: 2
-      Hash: 0b7c410e2e0c502dede2a70b16110ed3
+      Hash: 44bbc0d578d45f527832221d2b42f46b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -953,6 +957,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
+      Hash: 8b8b905f15d787f4343e8eb51d130361
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundsManager
   - hash:
       serializedVersion: 2
       Hash: f6bf0fc71f5b6dfe19329b1c4df9fee0
@@ -1577,18 +1587,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 7522c74a1e0c65a5338810f6263f419c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundsManager
-  - hash:
-      serializedVersion: 2
-      Hash: 270f48df5a18e92156e9e7dd33d7b847
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundLoader
   platform: 20
   scenePathNames:
   - Assets/Scenes/StartScene.unity

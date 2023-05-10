@@ -5,7 +5,8 @@ using UnityEngine;
 public class SoundsManager : MonoBehaviour
 {
     public static SoundsManager Instance;
-    [HideInInspector] public SoundLoader soundLoader;
+    // [HideInInspector] public MusicLoader musicLoader;
+    [HideInInspector] public SoundsLoader soundsLoader;
 
     void Awake()
     {
@@ -23,7 +24,9 @@ public class SoundsManager : MonoBehaviour
     }
 
     void Start() {
-         soundLoader = GetComponentInChildren<SoundLoader>();
-         soundLoader.Init();
+        //  musicLoader = GetComponentInChildren<MusicLoader>();
+        //  musicLoader.Init();
+         soundsLoader = GetComponentInChildren<SoundsLoader>();
+         soundsLoader.Init();
     }
 }

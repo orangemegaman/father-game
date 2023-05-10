@@ -19,10 +19,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject _rateGame;
     [SerializeField] GameObject _gameOver;
     [SerializeField] public GameObject _areWePlaying;
-    [SerializeField] AudioSource _soundBang;
-    [SerializeField] public AudioSource _soundTheme;
-    [SerializeField] AudioSource _soundAdvance;
-
     [SerializeField] public GameObject[] _lifes;
     [SerializeField] Animator _animator;
     [SerializeField] TextMeshProUGUI _levelNumber;
@@ -41,6 +37,7 @@ public class GameManager : MonoBehaviour
     bool flagConRepeatColision = true;
     bool flagPause = true;
     bool flagSpace = true;
+    public bool isMusic = false;
 
     int StartMinNumberCoins = 25;
     int CurrentMinNumberCoins;
@@ -53,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //ShowAdv(); // активировать при билде!!!
+       ShowAdv(); // активировать при билде!!!
         _startNewGame.SetActive(false);
         CounterForLifes = Progress.Instance.PlayerInfo.LifesCounter;
         CountLevel();
@@ -63,12 +60,8 @@ public class GameManager : MonoBehaviour
 
     public void AdvertisementShown()
     {
-
-        if (!_soundTheme.isPlaying)
-        {
-            _soundTheme.Play();
-
-        }
+        SoundsManager.Instance.soundsLoader.PlayMusic(0);
+        isMusic = true;
     }
 
     void FixedUpdate()
@@ -129,9 +122,11 @@ public class GameManager : MonoBehaviour
         {
             _animator.SetTrigger("Victory Idle");
             _animator.SetBool("Standing Idle", true);
-            _soundAdvance.Play();
-            _soundTheme.Stop();
-            //Invoke("ShowAdv", 2.5f); // активировать при билде!!!
+            SoundsManager.Instance.soundsLoader.StopMusic();
+            isMusic = false;
+            SoundsManager.Instance.soundsLoader.PlaySounds(4);// Finish
+
+            Invoke("ShowAdv", 2.5f); // активировать при билде!!!
         }
 
         SaveToProgress();
@@ -152,13 +147,11 @@ public class GameManager : MonoBehaviour
 
     public void Go()
     {
-        // if (!_soundTheme.isPlaying)
-        // {
-        //     _soundTheme.Play();
-        // }
-        SoundsManager.Instance.soundLoader.Play(0);
-
-
+        if (!isMusic)
+        {            
+        SoundsManager.Instance.soundsLoader.PlayMusic(0);
+        isMusic = true;
+        }
         _play.SetActive(false);
         _pause.SetActive(true);
         RoadGenerator.StartLevel();
@@ -198,14 +191,13 @@ public class GameManager : MonoBehaviour
 
     public void ContinueButton()
     {
-        //ContinueForCoinsExtern(); // активировать при билде!!!       
+       ContinueForCoinsExtern(); // активировать при билде!!!       
     }
 
     public void DecrementLifesPlayer()
-    {
-        // _soundTheme.Stop();
-        SoundsManager.Instance.soundLoader.StopMusic();
-        _soundBang.Play();
+    { 
+
+       SoundsManager.Instance.soundsLoader.PlaySounds(3);//Stone_Shatter
         flagSpace = true;
 
         if (CounterForLifes < _lifes.Length && flagConRepeatColision)
@@ -220,7 +212,6 @@ public class GameManager : MonoBehaviour
 
         if (CounterForLifes >= _lifes.Length)
         {
-            _soundTheme.Stop();
             flagSpace = false;
             flagPause = false;
             flagStand = true;
@@ -272,7 +263,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitTheGame()
     {
-        //ShowAdv(); // активировать при билде!!!
+        ShowAdv(); // активировать при билде!!!
         _continue.SetActive(false);
         _cancel.SetActive(false);
         _gameOver.SetActive(true);
@@ -283,7 +274,7 @@ public class GameManager : MonoBehaviour
         {
             _animator.SetBool("Victory Idle 0", true);
         }
-        //SetToLeaderboard(CoinManager._numberOfCoins); // активировать при билде!!!
+        SetToLeaderboard(CoinManager._numberOfCoins); // активировать при билде!!!
     }
 
     public void PermissionRating()

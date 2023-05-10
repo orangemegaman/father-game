@@ -42,13 +42,13 @@ public class Progress : MonoBehaviour
 
     public void Start()
     { 
-        LoadedDates(); // деактивировать при билде!!!
+        //LoadedDates(); // деактивировать при билде!!!
     }
 
     public void Save()
     {
         string jsonString = JsonUtility.ToJson(PlayerInfo);
-        //SaveExtern(jsonString); // активировать при билде!!!
+        SaveExtern(jsonString); // активировать при билде!!!
     }
     public void SetPlayerInfo(string value)
     {
@@ -73,7 +73,7 @@ public class Progress : MonoBehaviour
 
     public void CollLoadFromHtml()
     {
-       //LoadExtern(); // активировать при билде!!!
+       LoadExtern(); // активировать при билде!!!
     }
 
 }

@@ -15,7 +15,7 @@ public class Yandex : MonoBehaviour
 
     public void RateGameButton()
     {        
-        //RateGame(); // активировать при билде!!!     
+        RateGame(); // активировать при билде!!!     
      
     }
 }
